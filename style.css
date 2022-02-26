@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
+body{background-color: #f3f3f3;}
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+header .heder-band{
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #111;
+    text-transform: uppercase;
+    display: block;   
+    margin: 0 auto;
+    padding: 20px 0;
+}
+header nav{
+    width: 100%;
+    margin-bottom: 0px;
+}
+header nav ul{
+    display:block;
+  margin: 0 auto;
+  width: fit-content;
+
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    
+
+}
+header nav ul li a{
+    text-align: center;
+
+
+
+}
+.cases{
+    display: none;
+}
+
+                                                                        /*index*/
+
+.banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(banner.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 2px 2px #111 ;
+}
+
+.links div{
+    margin: 5px 16px 0;
+    width: calc(100%-40px);
+    height: 80px;
+    background-color: #11248d15 ;
+}
+
+.links div h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight:50;
+    line-height: 80px;
+    margin:0px;
+}
+footer{
+    background-color: rgb(36, 32, 32);
+    width: calc(100%)-80px;
+    padding: 40px 40px;
+    color: white;
+    overflow: hidden;
+}
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+footer ul li{
+    list-style:  none;
+    display: block;
+}
+.detials{
+    font-size: 50px;
+    padding: 40px 40px;
+    text-align: center;
+}
+.derection{
+    list-style: none;
+    text-align:center;
+    float: left;
+    display: none;
+}
+.footer-icon{
+    width: 110px;
+    float: right;
+    padding-right: 40px;
+}
+.footer-icon  a img {
+    width: 100%;
+   
+}
+
+@media screen and ( min-width:1000px){
+    
+    header .heder-band{
+
+        color: #111;
+        text-transform: uppercase;
+        display: block;   
+        margin:31px 0;
+        padding:0 20px 0 20px;
+        float: left;
+        line-height: 38px;
+    }
+    header nav{
+        width: 100%;
+
+    }
+    header nav ul{
+        display: block;
+        float: left;
+        padding: 20px 0 20px ;
+    
+    }
+    header nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 20px;
+        line-height: 60px;
+        
+    
+    }
+    header nav ul li a{
+        font-size: 25px;
+      
+    
+    }
+    .cases{
+        display: block;
+        float: right;
+        margin-right: 30px;
+        border: 2px solid black;
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 38px;
+        margin-top: 28px;
+    }
+
+    .banner{
+        height: 500px;
+        background-position:center;
+        background-size:cover;
+      
+    }
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+
+    }
+    .links{
+        overflow: hidden;
+    }
+    .links div{
+        height: 230px;
+        margin: 10px 5px 0;
+        float: left;
+    }
+    .index-boxlink-square{
+        width:calc(25% - 10px ) !important;
+        
+       
+    }
+    .index-boxlink-rectangle{
+        width:calc(50% - 10px ) !important;
+       
+        
+    }
+    .links{
+        padding-bottom: 10px;
+    }
+
+    .links div h3{
+        line-height: 230px;
+    }
+    
+footer{
+    background-color: rgb(36, 32, 32);
+    width: 100%;
+    height: 150px;
+    padding:0;
+    color: white;
+    overflow: hidden;
+}
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+footer ul li{
+    list-style:  none;
+    display: block;
+}
+.detials{
+    font-size:20px;
+    padding: 20px 40px;
+    float: left;
+    text-align: left;
+}
+.derection{
+    list-style: none;
+    text-align:center;
+    float: left;
+    display: block;
+    font-size:20px;
+    padding-top: 20px;
+    text-align: left;
+    
+}
+.footer-icon{
+    width:50px;
+    height: 50px;
+    float: right;
+    padding-right: 40px;
+}
+.footer-icon  a img {
+    width: 100%;
+    height:100%;}
+}
