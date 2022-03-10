@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+       *{
+           border-radius: 4px;
+       }
+        .bigbox,.bigbox1,.bigbox2{
+            display: flex;
+           flex-flow: row  ;
+            
+            justify-content: space-evenly;
+        }
+        .firstline{
+            height: 200px;
+            width: 30%;
+            background-color: brown;
+            z-index: 1;
+        }
+    
+        .secondline{
+            
+            width: 23%;
+            
+            height: 40px;
+            margin: 5px;
+            background-color: yellowgreen;
+        }
+        .thirdline{
+            width: 18%;
+            margin: 5px;
+            height: 40px;
+            background-color: yellow;
+        }
+        .l{
+            display: flex;
+            justify-content:space-around;
+        }
+        .small-box{
+            width: 33%;
+            height: 40px;
+            margin: 5px;
+            background-color: rgb(252, 252, 252);
+            transition:all 0.1s ease-in;
+
+        }
+        .small-box:hover{
+            background-color: aqua;
+            width: 40%;
+            margin:0 3%;
+            cursor:pointer ;
+        }
+        .secondline:hover{
+            width: 28%;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+   <div class="bigbox">
+        <div class="firstline">1
+            
+           <div class="l">
+            <div class="small-box">1</div>
+            <div class="small-box">2</div>
+            <div class="small-box">3</div>
+            
+
+           </div>
+
+           <div class="l">
+            <div class="small-box">1</div>
+            <div class="small-box">2</div>
+            <div class="small-box">3</div>
+            <div class="small-box">4</div>            
+
+           </div>
+
+           <div class="l">
+            <div class="small-box">1</div>
+            <div class="small-box">2</div>
+            <div class="small-box">3</div>
+            <div class="small-box">4</div>            <div class="small-box">5</div>
+
+           </div>
+        
+        </div>
+        <div class="firstline">2</div>
+        <div class="firstline">3</div>
+
+  
+        
+   </div>
+
+   <div class="bigbox1">
+        <div class="secondline">1</div>
+        <div class="secondline">2</div>
+        <div class="secondline">3</div>
+        <div class="secondline">4</div>
+   </div>
+   <div class="bigbox2">
+       <div class="thirdline">1</div>
+       <div class="thirdline">2</div>
+       <div class="thirdline">3</div>
+       <div class="thirdline">4</div>
+       <div class="thirdline">5</div>
+   </div>
+
+</body>
+</html>
