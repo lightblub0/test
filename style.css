@@ -1,15 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
     text-decoration: none;
-} 
-body{background-color: #f3f3f3;}
-header{
+    color: #111;
+ 
+
+}
+
+
+body{
+    background-color:f3f3f3;
+}
+
+@media  screen and (max-width:1000px) {
+    
+    header{
     background-color: #fff;
     width: 100%;
     height: 100px;
 }
-header .heder-band{
+.homepage{
     font-family: monospace;
     font-size: 24px;
     font-weight: 900;
@@ -33,15 +44,20 @@ header nav ul{
 header nav ul li{
     list-style: none;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     
 
 }
 header nav ul li a{
     text-align: center;
-
-
-
+}
+nav ul li:hover{
+        
+      border-radius: 30px;  
+    background:#ffac7fcb;
+    width:  ;
+    
 }
 .cases{
     display: none;
@@ -51,30 +67,64 @@ header nav ul li a{
 
 .banner{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 250px);
     background-image: url(banner.jpg);
     background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
-    display: table;
+    display: flex;
+    align-items: center;
 }
-.vertical-center{
-    display: table-cell;
-    vertical-align: middle;
-}
+
 .banner h1{
+
+    
     text-align: center;
     font-size: 60px;
     font-weight: 900;
     text-shadow: 2px 2px #111 ;
 }
 
-.links div{
-    margin: 5px 16px 0;
+.box-links{
+    
     width: calc(100%-40px);
-    height: 80px;
+    height:auto;
     background-color: #11248d15 ;
 }
+.box-links a{
+    border: 5px solid white;
+    border-collapse:collapse;
+    
+    text-align: center;
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color:#e0e2eb;
+    transition: all 2s ease-in-out;
+    animation: roll 5s linear 1 ;
+    z-index: 1;
+    }
+
+@keyframes roll {
+        
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box-links a:hover{
+    font-size: 20px;
+transition: 1s;
+    transform: scale(1.15);
+    background-color: #feb189;
+    box-shadow:2px 2px 2px gray;
+    border-radius: 10px;
+    z-index: 2;
+}
+
 
 .links div h3{
     text-align: center;
@@ -85,165 +135,242 @@ header nav ul li a{
 }
 footer{
     background-color: rgb(36, 32, 32);
-    width: calc(100%)-80px;
-    padding: 40px 40px;
+    width: 100%;
+    height: 300px;
     color: white;
-    overflow: hidden;
+    margin: 5px auto;
+   overflow: hidden;
+    
 }
-footer ul{
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-}
+
 footer ul li{
+    color: white;
     list-style:  none;
     display: block;
 }
 .detials{
-    font-size: 50px;
-    padding: 40px 40px;
-    text-align: center;
+    padding: 40px 0 0 20px;
+    float: left;
 }
 .derection{
-    list-style: none;
-    text-align:center;
-    float: left;
     display: none;
 }
 .footer-icon{
-    width: 110px;
     float: right;
-    padding-right: 40px;
+    width: 50px;
+    height: 200px;
 }
-.footer-icon  a img {
-    width: 100%;
-   
+.footer-icon a img{
+    width: 40px;
+
 }
+
+
+}
+
 
 @media screen and ( min-width:1000px){
     
-    header .heder-band{
-
-        color: #111;
-        text-transform: uppercase;
-        display: block;   
-        margin:31px 0;
-        padding:0 20px 0 20px;
-        float: left;
-        line-height: 38px;
-    }
-    header nav{
-        width: 100%;
-
-    }
-    header nav ul{
-        display: block;
-        float: left;
-        padding: 20px 0 20px ;
-    
-    }
-    header nav ul li{
-        list-style: none;
-        display: inline-block;
-        padding-left: 20px;
-        line-height: 60px;
-        
-    
-    }
-    header nav ul li a{
-        font-size: 25px;
-      
-    
-    }
-    .cases{
-        display: block;
-        float: right;
-        margin-right: 30px;
-        border: 2px solid black;
-        font-size: 20px;
-        padding: 0 20px;
-        text-align: center;
-        line-height: 38px;
-        margin-top: 28px;
-    }
-
-    .banner{
-        height: 500px;
-        background-position:center;
-        background-size:cover;
-      
-    }
     .wrapper{
         width: 1000px;
         margin: 0 auto;
+    }
 
+
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #ffffff;
+        user-select: none;
     }
-    .links{
-        overflow: hidden;
-    }
-    .links div{
-        height: 230px;
-        margin: 10px 5px 0;
+    
+    .homepage{
+        
+        display: block;
+        margin: 20px 20px;
+        padding: 0 40px;
         float: left;
+        line-height: 60px;
+        font-weight: 900;
+        font-family: monospace;
+        font-size: 28px;
+        border-right: 3px solid black;
     }
-    .index-boxlink-square{
-        width:calc(25% - 10px ) !important;
+    .homepage a{
+        color: rgb(0, 0, 0);
+    }
+    
+    nav{
+        display: inline-block;
+        min-width:50%;
+        margin-left: 20px;
+        height: 100px;
         
        
-    }
-    .index-boxlink-rectangle{
-        width:calc(50% - 10px ) !important;
-       
         
     }
-    .links{
-        padding-bottom: 10px;
+    nav ul{
+        display: flex;
+        width: 80%;
+        list-style: none;
+        
+        
+    }
+    nav ul li{
+        width: 20%;
+        margin: 0 5px;
+        float: left;
+        display: block;
+        background: white;
+        transition: all 1s ease;
+        border-radius: 20px;
+    }
+    nav ul li:hover{
+        
+        
+        background:#ffac7fcb;
+        width: 50% ;
+        
+    }
+    ul li a{
+        color: black;
+        font-size: 20px;
+       text-align: center;
+        margin:0 5px;
+        line-height: 100px;
+        
+        display: block;
+        
+    }
+    .cases{
+        width:5%;
+        background-color: white;
+        float: right;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-right: 5%;
+        padding: 10px 5px;
+        border: 2px solid black;
+        transition: all 1s;
     }
 
-    .links div h3{
-        line-height: 230px;
+    .cases:hover{
+        background-color: #9affa380;
+        width: 10% ;
+        
+    }
+
+    .banner{
+        width: 100%;
+        height: 500px;
+        background-size:cover;
+        background-position:center;
+        
+        background-image: url(banner.jpg);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .banner h1{
+        text-align: center;
+        font-size: 50px;
+        
+        
+       
+        
+    }
+    .box-links{
+        margin: 5px auto;
+        display: flex;
+    
+        
+    }
+
+    .box-links a {
+        color: black;
+        font-size: 15px;
+           height:250px; 
+           text-align: center;
+           line-height: 250px;
+           margin: 5px 10px;
+           background-color:#e0e2eb;
+           transition: all 2s ease-in-out;
+           animation: roll 0s linear 1 ;
+           z-index: 1;
+    }
+    @keyframes roll {
+        
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
     }
     
-footer{
-    background-color: rgb(36, 32, 32);
-    width: 100%;
-    height: 150px;
-    padding:0;
-    color: white;
-    overflow: hidden;
-}
-footer ul{
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-}
-footer ul li{
-    list-style:  none;
-    display: block;
-}
-.detials{
-    font-size:20px;
-    padding: 20px 40px;
-    float: left;
-    text-align: left;
-}
-.derection{
-    list-style: none;
-    text-align:center;
-    float: left;
-    display: block;
-    font-size:20px;
-    padding-top: 20px;
-    text-align: left;
+    .box-links a:hover{
+        font-size: 20px;
+    transition: 1s;
+        transform: scale(1.15);
+        background-color: #feb189;
+        box-shadow: 10px 10px 2px gray;
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    .boxlink-square{
+        
+        width:calc(25% - 10px) ;
+        
+    }
+    .boxlink-rectrangle{
+        
+        width: calc(50% - 10px) ;
+        
+    }
+
+    footer{
+        height: 150px;
+        width: 100%;
+        background-color: black;
+        
+    }
     
-}
-.footer-icon{
-    width:50px;
-    height: 50px;
-    float: right;
-    padding-right: 40px;
-}
-.footer-icon  a img {
-    width: 100%;
-    height:100%;}
+    footer ul{
+        
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+    }
+    footer ul li{
+        color: white;
+        list-style:  none;
+        display: block;
+    }
+    .detials{
+        font-size:20px;
+        padding: 20px 40px;
+        float: left;
+        text-align: left;
+    }
+    .derection{
+        list-style: none;
+        text-align:center;
+        float: left;
+        display: block;
+        font-size:20px;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .footer-icon{
+        width: 200px;
+        float: right;
+    }
+    .footer-icon img{
+        width: 50px;
+    }
 }
