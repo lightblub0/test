@@ -53,7 +53,7 @@ header nav ul li a{
 nav ul li:hover{
         
       border-radius: 30px;  
-    background:#ffac7fcb;
+    background:#9289fe;
     
     
 }
@@ -88,7 +88,7 @@ nav ul li:hover{
     
     width: calc(100%-40px);
     height:auto;
-    background-color: #11248d15 ;
+    background-color: #9289fe ;
 }
 .box-links a{
     display: block;
@@ -120,7 +120,7 @@ nav ul li:hover{
     font-size: 20px;
 transition: 0.5s;
     
-    background-color: #feb189;
+    background-color: #9289fe;
     
     
     z-index: 2;
