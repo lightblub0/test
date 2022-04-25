@@ -230,7 +230,7 @@ footer ul li{
     header nav ul li:hover{
         
         
-        background:#ffac7fcb;
+        background:#9289fe;
         width: 50% ;
         
     }
@@ -260,11 +260,11 @@ footer ul li{
     }
 
     .cases:hover{
-        background-color: #9affa380;
+        background-color: #9289fe;
         width: 10% ;
         
     }
-
+                                      /*body*/
     .banner{
         width: 100%;
         height: 500px;
@@ -321,7 +321,7 @@ footer ul li{
         font-size: 20px;
     transition: 0.5s;
         transform: scale(1.15);
-        background-color: #feb189;
+        background-color: #9289fe;
         box-shadow: 10px 10px 2px gray;
         border-radius: 10px;
         z-index: 2;
